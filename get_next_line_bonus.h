@@ -6,7 +6,7 @@
 /*   By: bruiz-ro <bruiz-ro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 15:01:18 by bruiz-ro          #+#    #+#             */
-/*   Updated: 2024/06/05 15:18:09 by bruiz-ro         ###   ########.fr       */
+/*   Updated: 2024/06/06 13:16:27 by bruiz-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 #  define BUFFER_SIZE 5
 # endif
 
-# include <fcntl.h>
 # include <unistd.h>
 # include <stdlib.h>
 

@@ -6,7 +6,7 @@
 /*   By: bruiz-ro <bruiz-ro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 15:01:07 by bruiz-ro          #+#    #+#             */
-/*   Updated: 2024/06/05 15:49:36 by bruiz-ro         ###   ########.fr       */
+/*   Updated: 2024/06/06 13:36:20 by bruiz-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ char	*get_next_line(int fd)
 {
 	int			bytes_read;
 	char		*temporal;
-	static char	*start_line [1024] = {NULL};
+	static char	*start_line [FD_SETSIZE] = {NULL};
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
@@ -97,7 +97,9 @@ char	*get_next_line(int fd)
 	return (temporal);
 }
 
-/*#include "stdio.h"
+/*#include <stdio.h>
+#include <fcntl.h>
+
 int	main(int argc, char *argv[])
 {
 	int		fd;
