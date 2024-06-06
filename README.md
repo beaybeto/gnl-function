@@ -34,4 +34,4 @@ Conocimientos previos que es preferible tener para comprender el ejercicio:
 
 Una de las claves principales para tener éxito en este ejercicio es saber controlar los **leaks de memoria**, que son errores que ocurren cuando un proceso gestiona mal la memoria, es decir, cuando se reserva memoria sin liberarla.
 
-Existe una parte **BONUS**, que consiste en ser capaz de gestionar varios fd a la vez. Para ello establezco un array de punteros de tamaño muy grande (1024) para asegurarme de que existe espacio para suficientes fd. Otro modo podría ser utilizar listas enlazadas, o asignar memoria dinámicamente en lugar de usar un tamaño predefinido. 
+Existe una parte **BONUS**, que consiste en ser capaz de gestionar varios fd a la vez. Para ello establezco un array de punteros del mayor tamaño posible (FD_SETSIZE)
