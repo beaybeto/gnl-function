@@ -33,5 +33,3 @@ Conocimientos previos que es preferible tener para comprender el ejercicio:
 - En el main es donde se va a utilizar la función OPEN y también CLOSE
 
 Una de las claves principales para tener éxito en este ejercicio es saber controlar los **leaks de memoria**, que son errores que ocurren cuando un proceso gestiona mal la memoria, es decir, cuando se reserva memoria sin liberarla.
-
-Existe una parte **BONUS**, que consiste en ser capaz de gestionar varios fd a la vez. Para ello establezco un array de punteros del mayor tamaño posible (FD_SETSIZE)
